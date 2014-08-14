@@ -1,0 +1,10 @@
+# Site settings
+title: "青玉善"
+description: "HealthJade官网"
+timezone: Asia/Shanghai
+default_locale: zh-cn
+baseurl: ""
+url: "http://healthjade.com"
+
+# Build settings
+exclude: [CNAME, README.md]
