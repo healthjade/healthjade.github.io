@@ -21,9 +21,21 @@ body > .container {
 	color: #333;
 }
 .navbar-default .navbar-nav > li > a:hover,
-.navbar-default .navbar-nav > li > a:focus {
+.navbar-default .navbar-nav > li > a:focus,
+.navbar-default .navbar-collapse .dropdown-menu > li > a:hover,
+.navbar-default .navbar-collapse .dropdown-menu > li > a:focus {
 	color: #777;
 	background-color: transparent;
+}
+.navbar-default .navbar-collapse .navbar-nav,
+.navbar-default .navbar-collapse .dropdown-menu {
+	text-align: center;
+	min-width: 90px;
+}
+.navbar-default .navbar-collapse .dropdown-menu> li > a {
+	font-size: 14px;
+	font-weight: bold;
+	color: #333;
 }
 .navbar-default .navbar-brand-image {
 	height: 86px;
@@ -69,13 +81,22 @@ body > .container {
 }
 @media (min-width: 768px) {
 	.navbar-default .navbar-collapse {
-		margin-top: 43px;
+		margin-top: 44px;
 	}
 	.navbar-default .navbar-collapse .navbar-nav {
 		margin-left: 10px;
 	}
 	.navbar-default .navbar-collapse .navbar-nav > li {
 		margin-left: 20px;
+	}
+
+	.navbar .nav > li .dropdown-menu {
+		margin-top: -8px;
+		margin-left: -5px;
+		margin-right: 0;
+	}
+	.navbar .nav > li:hover .dropdown-menu {
+		display: block;
 	}
 }
 @media only screen and (max-width : 320px) {
@@ -103,7 +124,6 @@ body > .container {
 		padding-right: 5px;
 	}
 }
-
 /* home page */
 #slides {
 	display:none;
