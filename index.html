@@ -1,6 +1,34 @@
 ---
 layout: default
 ---
-<div class="jumbotron">
-	<img class="img-responsive" src="/public/images/brand-01.jpg" style="margin:auto" />
+<div id="slides">
+	<img src="{{ '/public/images/slideshow01.jpg' | prepend: site.baseurl }}" />
+	<img src="{{ '/public/images/slideshow02.jpg' | prepend: site.baseurl }}" />
 </div>
+<script type="text/javascript">
+$(function(){
+	$("#slides").slidesjs({
+		effect: {
+			slide: {
+				speed: 1000
+			}
+		},
+		navigation: {
+			active: false,
+		},
+		pagination: {
+			active: false,
+		},
+		play: {
+          active: false,
+          effect: "slide",
+          auto: true,
+          interval: 5000,
+          auto: true,
+          swap: true,
+          pauseOnHover: false,
+          restartDelay: 2500
+        }
+	});
+});
+</script>
