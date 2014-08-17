@@ -79,7 +79,7 @@ body > .container {
 }
 @media (min-width: 768px) {
 	.navbar-default .navbar-collapse {
-		margin-top: 44px;
+		margin-top: 45px;
 	}
 	.navbar-default .navbar-collapse .navbar-nav {
 		margin-left: 10px;
