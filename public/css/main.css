@@ -20,6 +20,11 @@ body > .container {
 	font-weight: bold;
 	color: #333;
 }
+.navbar-default .navbar-collapse .dropdown-menu> li > a {
+	font-size: 14px;
+	font-weight: bold;
+	color: #333;
+}
 .navbar-default .navbar-nav > li > a:hover,
 .navbar-default .navbar-nav > li > a:focus,
 .navbar-default .navbar-collapse .dropdown-menu > li > a:hover,
@@ -31,11 +36,6 @@ body > .container {
 .navbar-default .navbar-collapse .dropdown-menu {
 	text-align: center;
 	min-width: 90px;
-}
-.navbar-default .navbar-collapse .dropdown-menu> li > a {
-	font-size: 14px;
-	font-weight: bold;
-	color: #333;
 }
 .navbar-default .navbar-brand-image {
 	height: 86px;
@@ -90,7 +90,7 @@ body > .container {
 
 	.navbar .nav > li .dropdown-menu {
 		margin-top: -8px;
-		margin-left: -5px;
+		margin-left: -4px;
 		margin-right: 0;
 	}
 	.navbar .nav > li:hover .dropdown-menu {
