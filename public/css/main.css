@@ -9,6 +9,7 @@ body > .container {
 	background-color: transparent;
 	border-color: transparent;
 	margin-bottom: 5px;
+	z-index: 100;
 }
 .navbar-default .navbar-brand {
     line-height: 120px;
@@ -30,12 +31,17 @@ body > .container {
 .navbar-default .navbar-collapse .dropdown-menu > li > a:hover,
 .navbar-default .navbar-collapse .dropdown-menu > li > a:focus {
 	color: #777;
-	background-color: transparent;
+	background-color: #adddd5;
 }
 .navbar-default .navbar-collapse .navbar-nav,
 .navbar-default .navbar-collapse .dropdown-menu {
-	text-align: center;
 	min-width: 90px;
+}
+.navbar-default .navbar-collapse .navbar-nav {
+	text-align: center;
+}
+.navbar-default .navbar-collapse .dropdown-menu {
+	text-align: left;
 }
 .navbar-default .navbar-brand-image {
 	height: 86px;
@@ -95,6 +101,9 @@ body > .container {
 	}
 	.navbar .nav > li:hover .dropdown-menu {
 		display: block;
+	}
+	.navbar-default .navbar-collapse .dropdown-menu {
+		text-align: center;
 	}
 }
 @media only screen and (max-width : 320px) {
