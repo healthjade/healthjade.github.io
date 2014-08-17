@@ -1,4 +1,20 @@
 ---
 layout: default
+title: '品牌起源'
 ---
-<img class="img-responsive" src="{{ '/public/images/brand-origin.jpg' | prepend: site.baseurl }}" />
+<style>
+#show-block {
+	visibility: hidden;
+	opacity: 0.0;
+	top:100%;
+	position: relative;
+}
+</style>
+<img id='show-block' class="img-responsive" src="{{ '/public/images/brand-origin.jpg' | prepend: site.baseurl }}" />
+<script type="text/javascript">
+$(document).ready(function(){
+	$("#show-block")
+		.css('visibility', 'visible')
+		.animate({opacity: 1.0, top: '0px'}, 2000);
+});
+</script>
